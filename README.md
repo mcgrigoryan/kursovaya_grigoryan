@@ -2,6 +2,8 @@
 
 Курсовой проект по специальности 09.02.07 «Информационные системы и программирование».
 
+**Репозиторий:** [GitHub](https://github.com/)
+
 ## Описание
 
 Веб-приложение для автоматизации складского учёта: номенклатура товаров, учёт операций (производство, закупка, продажа), расчёт остатков, отчётность, разграничение доступа по ролям, логирование действий.
@@ -20,7 +22,7 @@
 ### 1. Клонирование и зависимости
 
 ```bash
-git clone <репозиторий>
+git clone https://github.com/YOUR_USERNAME/laravel-warehouse-accounting.git airus
 cd airus
 composer install
 ```
@@ -98,6 +100,23 @@ php artisan test
 - `GET /salary` — зарплатная ведомость
 - `GET /analytics` — аналитика (директор)
 - `GET /logs` — журнал действий (директор)
+
+## Публикация на GitHub
+
+Локальный репозиторий уже инициализирован. Для загрузки на GitHub:
+
+1. Создайте новый репозиторий на [github.com](https://github.com/new):
+   - Название: `laravel-warehouse-accounting` (или любое другое)
+   - Публичный (Public)
+   - **Не** добавляйте README, .gitignore или license — они уже есть в проекте
+
+2. Выполните команды (подставьте свой username и название репо):
+
+```bash
+git remote add origin https://github.com/YOUR_USERNAME/laravel-warehouse-accounting.git
+git branch -M main
+git push -u origin main
+```
 
 ## Лицензия
 
