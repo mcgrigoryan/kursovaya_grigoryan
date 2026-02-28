@@ -33,6 +33,15 @@
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Войти</button>
             </form>
+
+            <div class="mt-4 text-muted small">
+                <p class="mb-1 fw-semibold">Тестовые данные для входа:</p>
+                <ul class="list-unstyled ps-0">
+                    <li>Менеджер: manager / manager123</li>
+                    <li>Бухгалтер: accountant / accountant123</li>
+                    <li>Директор: director / director123</li>
+                </ul>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

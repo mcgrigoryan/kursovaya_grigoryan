@@ -27,10 +27,10 @@ class ReportController extends Controller
         $query = Report::with('user')->orderByDesc('created_at');
 
         if ($request->filled('date_from')) {
-            $query->where('period', '>=', $request->date_from);
+            $query->whereDate('created_at', '>=', $request->date_from);
         }
         if ($request->filled('date_to')) {
-            $query->where('period', '<=', $request->date_to);
+            $query->whereDate('created_at', '<=', $request->date_to);
         }
 
         $reports = $query->paginate(10)->withQueryString();

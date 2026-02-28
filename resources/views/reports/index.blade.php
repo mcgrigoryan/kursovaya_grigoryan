@@ -113,10 +113,10 @@
     <div class="card-body">
         <form method="GET" class="row g-3 mb-4">
             <div class="col-auto">
-                <input type="month" name="date_from" class="form-control" value="{{ request('date_from') }}" placeholder="От">
+                <input type="date" name="date_from" class="form-control" value="{{ request('date_from') }}" placeholder="Дата с">
             </div>
             <div class="col-auto">
-                <input type="month" name="date_to" class="form-control" value="{{ request('date_to') }}" placeholder="До">
+                <input type="date" name="date_to" class="form-control" value="{{ request('date_to') }}" placeholder="Дата по">
             </div>
             <div class="col-auto">
                 <button type="submit" class="btn btn-secondary">Фильтр</button>
